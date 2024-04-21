@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="registration">
+            <h1>Register <span>Here</span></h1>
+            <form  onsubmit="takevalue()">
+
+            <input type="text" name="name" placeholder="Name" id="name" required>
+            <input type="text" name="email" placeholder="Email-Id" id="email" required>
+            <input type="tel" name="phonenum" placeholder="Phone No." id="phonenum" required>
+            <input type="number" name="Age" placeholder="Age" id="Age" required>
+            <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+            <br> <br> 
+            <input type="submit" value="Submit" class="submitbtn">
+        </form>
+    </section>
+
+
+    <script>
+    function takevalue()
+    {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phonenum = document.getElementById("phonenum").value;
+        var Age = document.getElementById("Age").value;
+
+
+        document.write("you name is :- " + name);
+        document.write("your email is :- " + email);
+        document.write("your phone number is :- " + phonenum);
+        document.write("your  Age is :- " + Age);
+    }
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- <h4>Gender</h4>
+<input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<input type="radio" name="mygender" id=""> Female
+<h4>Departure</h4>
+<input type="datetime-local" name="departuredate" id="departuredate" required>
+<h4>Return</h4>
+<input type="datetime-local" name="returndate" id="returndate" required>
+<h4>Travel Destination</h4>
+<input type="checkbox" name="td" id="Kashmir"> Kashmir &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Sydney"> Sydney &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Paris"> Paris &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Bali"> Bali &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Dubai"> Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Geneva"> Geneva &nbsp; &nbsp; &nbsp; 
+<input type="checkbox" name="td" id="Port Blair"> Port Blair &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="td" id="Rome"> Rome &nbsp; &nbsp; &nbsp;
+<br> <br>
+<h4>Package</h4>
+<input type="radio" name="locations" id="Bronze" required> Bronze &nbsp; &nbsp; &nbsp;
+<input type="radio" name="locations" id="Silver"> Silver &nbsp; &nbsp; &nbsp;
+<input type="radio" name="locations" id="Gold"> Gold &nbsp; &nbsp; &nbsp;
+<input type="radio" name="locations" id="Platinum"> Platinum &nbsp; &nbsp; &nbsp;
+<br> <br> 
+<input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+<br> <br> 
+<input type="submit" value="Submit" class="submitbtn">
+
+</form> -->
